@@ -30,20 +30,40 @@ public class Main {
         apartments[2] = apartmentThree;
         apartments[3] = apartmentFour;
         int i= 0;
-        for (; i <= keys.length-1; i++ ) {
-            System.out.print(keys[i] + " ");
+        for (; i < keys.length; i++ ) {
+            System.out.print(keys[i] + ", ");
         }
+        System.out.print(keys[keys.length-1]);
         System.out.println(" ");
-        System.out.print(jams[0] + "," + jams[1] + "," + jams[2] );
+
+        for(int b = 0; b< jams.length; b++){
+            System.out.print(jams[b] + ", ");
+        }
+        System.out.print(jams[jams.length-1]);
         System.out.println(" ");
-        System.out.print(apartments[0] + "," + apartments[1] + "," + apartments[2] + "," + apartments[3]);
-        System.out.println("");
+        int f = 0;
+        for(; f<apartments.length; f++) {
+            System.out.print(apartments[f] + ", ");
+        }
+        System.out.print(apartments[apartments.length-1]);
         System.out.println(" ");
-        System.out.print(keys[2]+"," + keys[1] + "," + keys[0]);
+
+        //Задача 3
+        int s = 1;
+        for(s = keys.length-1; s>0; s--) {
+            System.out.print(keys[s] + ", ");
+        }
+        System.out.print(keys[0]);
         System.out.println(" ");
-        System.out.print(jams[2] + "," + jams[1] + "," + jams[0] );
+        for (int z = jams.length-1;z > 0; z--) {
+            System.out.print(jams[z] + ", ");
+        }
+        System.out.print(jams[0]);
         System.out.println(" ");
-        System.out.print(apartments[3] + "," + apartments[2] + "," + apartments[1] + "," + apartments[0]);
+        for(int d = apartments.length-1; d > 0; d--){
+            System.out.print(apartments[d] + ", ");
+        }
+        System.out.print(apartments[0]);
         System.out.println("");
 
            //задача 4
@@ -54,7 +74,7 @@ public class Main {
             System.out.print(keys[v] + ",");
         }
 
-
+          int[] weights = {90, 93, 51};
 
 
 
